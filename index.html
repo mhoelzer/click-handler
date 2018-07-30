@@ -47,12 +47,11 @@
             var count=0;
             const counter_button = document.getElementById("counter_button");
             const countspan = document.getElementById("countspan");
-            // takes all from element and make things equal
             counter_button.onclick = function() {
                 count++; 
-                // want to change stuff inside the html
+                // want to change stuff inside the html, do innerHtml
                 countspan.innerHTML = count;
-                /* TODO 2
+                /* TODO 2 --> DONE
                  *
                  * Fill in this function so that it increments
                  * (adds one to) the variable named count,
@@ -69,7 +68,12 @@
         <script>
             const even_or_odd_button = document.getElementById("even_or_odd_button");
             even_or_odd_button.onclick = function() {
-                /* TODO 3
+                if (count % 2) {
+                    alert ("How ODD....");
+                } else {
+                    alert ("I can't EVEN!!!");
+                }
+                /* TODO 3 --> DONE
                  *
                  * Fill in this function so that it shows an
                  * alert dialog stating whether the count
